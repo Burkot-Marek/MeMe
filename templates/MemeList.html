@@ -1,0 +1,24 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="{% static 'style.css' %}"rel="stylesheet" type="text/css">
+</head>
+<body>
+<h1>Wszystkie Memy</h1>
+
+{% for meme in memes %}
+<div name="Meme">
+    <strong class="title">{{ meme.title }}</strong>
+    <br>
+    {{ meme.description }}
+    <br>
+    Data publikacji
+    {{ meme.created }}
+</div>
+{% endfor %}
+
+</body>
+</html>
