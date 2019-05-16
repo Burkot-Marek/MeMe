@@ -3,20 +3,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>MeMe.pl</title>
     <link href="{% static 'style.css' %}"rel="stylesheet" type="text/css">
 </head>
 <body>
+
+<h4><a href="{% url 'NewMeme' %}">Aby dodać nowy mem kliknij tu!</a></h4>
+
+
 <h1>Wszystkie Memy</h1>
 
 {% for meme in memes %}
 <div name="Meme">
     <strong class="title">{{ meme.title }}</strong>
     <br>
+    Opis:
     {{ meme.description }}
     <br>
-    Data publikacji
+    Data publikacji:
     {{ meme.created }}
+    <br>
+    Data ost. edycji:
+    {{ meme.modified }}
+    <br>
+    <a href="{% url 'EditMeme' meme.id %}">Edytuj</a>
+    <a href="{% url 'DeleteMeme' meme.id %}">Usuń</a>
 </div>
 {% endfor %}
 

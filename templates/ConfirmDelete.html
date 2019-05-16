@@ -1,0 +1,19 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Usuń mema :(</title>
+    <link href="{% static 'style.css' %}"rel="stylesheet" type="text/css">
+{#    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>#}
+</head>
+<body>
+    <h3>Czy napewno chcesz usunąć "{{ meme.title }}"?</h3>
+    <form method="POST">
+        {% csrf_token %}
+        <input type="submit" id="confirm" value="Potwierdź">
+        <a href="{% url 'Home' %}"><input type="button" id="cancel" value="Anuluj"></a>
+    </form>
+
+</body>
+</html>

@@ -1,8 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>Dodaj Mem!</title>
+    <link href="{% static 'style.css' %}"rel="stylesheet" type="text/css">
 </head>
 <body>
     <form method="POST" enctype="multipart/form-data">
@@ -11,16 +13,16 @@
         {% for field in form %}
             <div class="memeWrapper">
             {{ field.label_tag }}<br>
-            {{ field }}
-            {% if field.help_text %}<br>
+            {% if field.help_text %}
                 <small style="color: grey">{{ field.help_text }}</small>
-            {% endif %}
+            {% endif %}<br>
+            {{ field }}
             {% for error in field.errors %}
                 <p style="color: #ff5a6e">{{ error }}</p>
             {% endfor %}
             </div>
         {% endfor %}
-        <button type="submit">Dodaj!</button>
+        <button type="submit">Dodaj</button>
     </form>
 
 </body>

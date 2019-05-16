@@ -8,10 +8,13 @@ class Meme(models.Model):
     picture = models.ImageField(upload_to='memes', unique=True)
     dateOfBirth = models.DateField(blank=True, null=True)
     dateOfDeath = models.DateField(blank=True, null=True)
-    created = models.DateTimeField(auto_now_add=True)
     description = models.TextField(max_length=254)
-    public = models.CharField(max_length=14,default="nic")
+    public = models.CharField(max_length=6)
+    created = models.DateTimeField(auto_now_add=True)
+    modified = models.DateTimeField(auto_now=True)
     memeClass = models.CharField(max_length=30, blank=True, null=True)
+    #dankScale = models.
+    #dodać podklasę połączoną połaczeniem 1 do 1 zawierającą klase mema i skalę mema
 
     def __str__(self):
         return f'{self.title}'
