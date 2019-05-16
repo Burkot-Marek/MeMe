@@ -6,8 +6,8 @@ from .models import *
 # admin.site.register(Meme)
 @admin.register(Meme)
 class MemeAdmin(admin.ModelAdmin):
-    fields = ('title', 'picture', 'dateOfBirth','dateOfDeath','description')
-    list_display = ('title', 'created', 'dateOfBirth', 'dateOfDeath')
-    list_filter = ('title','created','dateOfBirth','dateOfDeath')
-    search_fields = ('title', 'description')
+    fields = ('title', 'picture', 'dateOfBirth', 'dateOfDeath', 'description','public', 'memeClass')
+    list_display = ('title', 'created', 'dateOfBirth', 'dateOfDeath', 'memeClass')
+    list_filter = ('title', 'created', 'dateOfBirth', 'dateOfDeath')
+    search_fields = ('title', 'description', 'memeClass')
 
