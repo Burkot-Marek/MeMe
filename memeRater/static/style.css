@@ -1,6 +1,61 @@
 body{
     background-color: #badaff;
-    font-size:16px;
-    font-family:"Comic Sans MS";
-    font-style:italic;
+    /*font-size:16px;*/
+    /*font-family:"Comic Sans MS";*/
+    /*font-style:italic;*/
+}
+.login_card{
+    margin-top: 13%;
+    margin-left: 32%;
+}
+
+.login_button{
+    margin-left:38%;
+}
+.login_title{
+    margin-left:40%;
+}
+#createAcc{
+    margin-left:33%;
+}
+.Meme{
+    background-color: #c3eaff;
+}
+
+.delete_buttons{
+    margin-left:30%;
+}
+
+.delete_title{
+    margin-left:20%;
+}
+.nav_bar{
+    background-color: #c3eaff;
+}
+
+.form-group{
+    margin-bottom: 3px;
+}
+
+.card-body{
+    padding-top:1px;
+    padding-bottom:1px;
+}
+
+.help-block{
+    color:grey;
+    font-size:0.8rem;
+    margin-bottom:3px;
+}
+.add_edit_button{
+    margin-left:42%;
+}
+
+span.help-block{
+    color:red;
+    font-weight: bold;
+}
+.edit-add-card{
+    margin-left:28%;
+    margin-top:2%;
 }

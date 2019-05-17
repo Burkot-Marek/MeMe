@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, get_object_or_404
-from .models import *
+from django.contrib.auth.decorators import login_required
+#from .models import *
 from .forms import *
 
 
@@ -8,6 +9,7 @@ def ListMeme(request):
     return render(request, 'MemeList.html', {'memes': memes})
 
 
+@login_required
 def NewMeme(request):
     form = AddForm(request.POST or None, request.FILES or None)
 
@@ -17,15 +19,17 @@ def NewMeme(request):
     return render(request, 'MemeAdd.html', {'form': form})
 
 
+@login_required
 def EditMeme(request, id):
     meme = get_object_or_404(Meme, pk=id)
     form = EditForm(request.POST or None, request.FILES or None, instance=meme)
     if form.is_valid():
         form.save()
         return redirect(ListMeme)
-    return render(request, 'MemeAdd.html', {'form': form})
+    return render(request, 'MemeEdit.html', {'form': form})
 
 
+@login_required
 def DeleteMeme(request, id):
     meme = get_object_or_404(Meme, pk=id)
 

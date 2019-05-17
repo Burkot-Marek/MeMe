@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'bootstrapform',
     'memeRater',
 ]
 
@@ -127,3 +128,11 @@ STATIC_URL = '/static/'
 MEDIA_URL = '/meme/'
 
 MEDIA_ROOT = 'pictures'
+
+LOGIN_URL = '/accounts/login/'
+
+LOGIN_REDIRECT_URL = 'Home'
+
+LOGOUT_URL = 'logout'
+
+LOGOUT_REDIRECT_URL = 'Home'

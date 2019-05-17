@@ -1,19 +1,17 @@
-{% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Usuń mema :(</title>
-    <link href="{% static 'style.css' %}"rel="stylesheet" type="text/css">
-{#    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>#}
-</head>
-<body>
-    <h3>Czy napewno chcesz usunąć "{{ meme.title }}"?</h3>
-    <form method="POST">
+{% extends 'main.html' %}
+{% block title %}Usuń mema :({% endblock %}
+{% block body %}
+<div class="card login_card" style="width: 40rem">
+    <div class="card-body ">
+        <h5 class="card-title delete_title">Czy na pewno chcesz usunąć mema?</h5>
+        <form method="POST" role="form">
         {% csrf_token %}
-        <input type="submit" id="confirm" value="Potwierdź">
-        <a href="{% url 'Home' %}"><input type="button" id="cancel" value="Anuluj"></a>
+            <div class="delete_buttons">
+                <button type="submit" class="btn btn-info">Potwierdź <i class="fas fa-check"></i></button>
+                <a href="{% url 'Home' %}"><button type="button" class="btn btn-info">Anuluj <i class="fas fa-times"></i></button></a>
+            </div>
     </form>
+    </div>
+</div>
+{% endblock %}
 
-</body>
-</html>
