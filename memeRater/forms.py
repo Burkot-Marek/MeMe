@@ -9,16 +9,17 @@ PUBLIC_OR_NOT = [
 ]
 helpValue = "Jeśli nie znasz, zostaw pole puste."
 
+
 class AddForm(ModelForm):
     title = forms.CharField(label="Nadaj tytuł swojemu memowi*",
                             help_text="Tytuł musi być niepowtarzalny oraz \n zawierać maksymalnie 62 znaki",
                             error_messages={'unique': 'Taki tytuł już jest zajęty',
                                             'max_length':'Tytuł może zawierać max. 62 znaki'})
     picture = forms.ImageField(label="Miejse na mema*", help_text='Pokaż nam tego świetnego mema!')
-    dateOfBirth = forms.DateField(label="Data powstania konceptu mema",                                                  #dodać kalendarz do pół typu DateField
+    dateOfBirth = forms.DateField(label="Data powstania konceptu mema",                                                         #dodać kalendarz do pół typu DateField
                                   help_text=helpValue,
                                   required=False)
-                                  #error_messages={'valueError': "Wpisz poprawną datę w formacie YY-MM-DD"})   dodać tutaj inny error message, sprawdzić jaki to error
+                                #error_messages={'valueError':                   "Wpisz poprawną datę w formacie YY-MM-DD"})   dodać tutaj inny error message, sprawdzić jaki to error
     public = forms.CharField(label= "Czy chcesz udostępnić swojego mema dla wszystkich?*",
                              help_text= "Jeśli wybierzesz nie, tylko ty będziesz miał do nich dostęp :(",
                              widget=forms.RadioSelect(choices=PUBLIC_OR_NOT))

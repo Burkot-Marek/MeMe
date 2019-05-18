@@ -1,6 +1,9 @@
 from django.db import models
+from django.core.validators import MinValueValidator, MaxValueValidator
 
-# Create your models here.
+
+# class MemeClass(models.Model):
+#     memeClass = models.CharField(max_length=30, default="")
 
 
 class Meme(models.Model):
@@ -12,9 +15,14 @@ class Meme(models.Model):
     public = models.CharField(max_length=6)
     created = models.DateTimeField(auto_now_add=True)
     modified = models.DateTimeField(auto_now=True)
-    memeClass = models.CharField(max_length=30, blank=True, null=True)
-    #dankScale = models.
-    #dodać podklasę połączoną połaczeniem 1 do 1 zawierającą klase mema i skalę mema
+    # additional = models.OneToOneField(MemeClass, on_delete=models.CASCADE, primary_key=True)
+                                                                                                                        #dodać podklasę połączoną połaczeniem 1 do 1 zawierającą klase mema i skalę mema
 
     def __str__(self):
         return f'{self.title}'
+
+
+class Comment(models.Model):
+    comment = models.CharField(default="", blank=True, max_length=30)
+    dankScale = models.IntegerField(default=5, validators=[MinValueValidator(1), MaxValueValidator(10)])
+    meme = models.ForeignKey(Meme, on_delete=models.CASCADE)

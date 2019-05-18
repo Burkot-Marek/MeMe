@@ -1,8 +1,8 @@
 {% extends 'main.html' %}
 {% block title %}Usuń mema :({% endblock %}
 {% block body %}
-<div class="card login_card" style="width: 40rem">
-    <div class="card-body ">
+<div class="card login_card">
+    <div class="card-body">
         <h5 class="card-title delete_title">Czy na pewno chcesz usunąć mema?</h5>
         <form method="POST" role="form">
         {% csrf_token %}

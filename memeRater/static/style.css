@@ -1,12 +1,20 @@
 body{
     background-color: #badaff;
-    /*font-size:16px;*/
-    /*font-family:"Comic Sans MS";*/
-    /*font-style:italic;*/
+}
+img{
+    width:15rem;
+}
+small{
+    color:grey;
+}
+span.help-block{
+    color:red;
+    font-weight: bold;
 }
 .login_card{
     margin-top: 13%;
     margin-left: 32%;
+    width:40rem;
 }
 
 .login_button{
@@ -50,12 +58,19 @@ body{
 .add_edit_button{
     margin-left:42%;
 }
-
-span.help-block{
-    color:red;
-    font-weight: bold;
-}
 .edit-add-card{
     margin-left:28%;
     margin-top:2%;
+    width:50rem;
+}
+.menu_icons{
+    margin-left:30%
+}
+.footer{
+    background-color: red;
+}
+.big_card{
+    margin-left:33%;
+    width:40rem;
+    border: solid 1px #928bd6;
 }

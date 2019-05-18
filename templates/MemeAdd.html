@@ -2,10 +2,10 @@
 {% load bootstrap %}
 {% block title %}Dodaj mema!{% endblock %}
 {% block body %}
-<div class="card create_card edit-add-card" style="width: 50rem">
+<div class="card create_card edit-add-card">
     <div class="card-body ">
         <h5 class="card-title login_title">Dodaj mema!</h5>
-        <small style="color: grey">Pola zaznaczone gwiazdką są obowiązkowe*</small>
+        <small >Pola zaznaczone gwiazdką są obowiązkowe*</small>
         <form method="post" role="form" enctype="multipart/form-data">
             {% csrf_token %}
             {{ form|bootstrap }}

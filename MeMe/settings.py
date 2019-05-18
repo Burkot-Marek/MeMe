@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django_cleanup',
     'bootstrapform',
+    'rest_framework',
     'memeRater',
 ]
 
@@ -125,7 +127,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-MEDIA_URL = '/meme/'
+MEDIA_URL = '/memes/'
 
 MEDIA_ROOT = 'pictures'
 

@@ -4,19 +4,11 @@
 <h1>Wszystkie Memy</h1>
 
 {% for meme in memes %}
-    <div class="card" style="width: 40rem">
+    <div class="card big_card" >
         <div class="card-body Meme">
             <div class="row">
-                <div class="col-sm-9">
-                    <h4 class="title">{{ meme.title }}</h4>
-                </div>
-                <div class="col-sm-3">
-                    <a href="{% url 'EditMeme' meme.id %}"><i class="fas fa-2x fa-edit"></i></a>
-                    <a href="{% url 'DeleteMeme' meme.id %}"><i class="fas fa-2x fa-trash-alt"></i></a>
-                </div>
-            </div>
-            <div class="row">
                 <div class="col-sm-6">
+                    <h4 class="title">{{ meme.title }}</h4>
                     Opis:
                     {{ meme.description }}
                     <br>
@@ -26,11 +18,14 @@
                     Data ost. edycji:
                     {{ meme.modified }}
                     <br>
+                    <a href="{% url 'EditMeme' meme.id %}"><i class="fas fa-2x fa-edit menu_icons"></i></a>
+                    <a href="{% url 'DeleteMeme' meme.id %}"><i class="fas fa-2x fa-trash-alt menu_icons"></i></a>
                 </div>
                 <div class="col-sm-6">
-                    <img src="/meme/{{meme.picture }}" class="rounded float-right" alt="Test" style="width: 15rem">
+                    <img src="/memes/{{meme.picture }}" class="rounded float-right" alt="">
                 </div>
             </div>
+        </div>
     </div>
 {% endfor %}
 {% endblock %}
