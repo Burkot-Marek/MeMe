@@ -4,16 +4,6 @@
     <bookmark url="file://$PROJECT_DIR$/memeRater/static/style.css" line="1" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bceea680-09d1-4b5d-bffb-3dce7d7b5a98" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MeMe/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/MeMe/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memeRater/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/memeRater/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memeRater/migrations/0009_auto_20190517_2337.py" beforeDir="false" afterPath="$PROJECT_DIR$/memeRater/migrations/0009_auto_20190517_2337.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memeRater/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/memeRater/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memeRater/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/memeRater/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/memeRater/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/memeRater/views.py" afterDir="false" />
-    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,10 +16,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memeRater/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -38,10 +24,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/memeRater/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -50,10 +32,6 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MeMe/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="881">
-              <caret line="102" column="62" selection-start-line="102" selection-start-column="62" selection-end-line="102" selection-end-column="62" />
             </state>
           </provider>
         </entry>
@@ -73,8 +51,6 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="6" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -153,27 +129,6 @@
             <path>
               <item name="MeMe" type="b2602c69:ProjectViewProjectNode" />
               <item name="MeMe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MeMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MeMe" type="462c0819:PsiDirectoryNode" />
-              <item name="MeMe" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MeMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MeMe" type="462c0819:PsiDirectoryNode" />
-              <item name="memeRater" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MeMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MeMe" type="462c0819:PsiDirectoryNode" />
-              <item name="memeRater" type="462c0819:PsiDirectoryNode" />
-              <item name="migrations" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MeMe" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MeMe" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -278,11 +233,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.19900772" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.2751817" />
@@ -335,38 +288,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="Piątek 21:30" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Transport24/Transport24/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-189">
-          <caret line="88" column="37" selection-start-line="88" selection-start-column="29" selection-end-line="88" selection-end-column="37" />
-          <folding>
-            <element signature="e#305#314#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Transport24/profiles/models.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Transport24/profiles/static/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Transport24/profiles/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Transport24/templates/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Transport24/Transport24/settings.py" />
+    <entry file="file://$PROJECT_DIR$/../Transport24/profiles/models.py" />
+    <entry file="file://$PROJECT_DIR$/../Transport24/profiles/static/style.css" />
+    <entry file="file://$PROJECT_DIR$/../Transport24/profiles/forms.py" />
+    <entry file="file://$PROJECT_DIR$/../Transport24/templates/signup.html" />
     <entry file="file://$PROJECT_DIR$/templates/registration/login.html.py" />
     <entry file="file://$PROJECT_DIR$/templates/registration/profile.html" />
     <entry file="file://$PROJECT_DIR$/memeRater/static/style.css">
@@ -476,14 +402,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/memeRater/migrations/0011_auto_20190517_2347.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/memeRater/migrations/0013_comment.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-31">
           <folding>
             <element signature="e#47#87#0" expanded="true" />
           </folding>
@@ -506,18 +424,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/memeRater/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="18" column="42" selection-start-line="18" selection-start-column="42" selection-end-line="18" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/memeRater/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -526,15 +437,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/MeMe/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="881">
-          <caret line="102" column="62" selection-start-line="102" selection-start-column="62" selection-end-line="102" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/memeRater/serializers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
           <folding>
             <element signature="e#0#50#0" expanded="true" />
           </folding>
