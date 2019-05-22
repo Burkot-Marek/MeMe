@@ -25,7 +25,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', default=True)
 
 
-ALLOWED_HOSTS = ['meme-mark.herokuapp.com', 'localhost:8000']
+ALLOWED_HOSTS = ['meme-mark.herokuapp.com']
 
 
 # Application definition
