@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
+from decouple import config
+from dj_database_url import parse as dburl
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -19,13 +21,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/
 
-# SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'g3-)cujr4+=g9%*)qdk6ga7(c4rbjx915m!6kqp8-50^s_@m97'
+SECRET_KEY = config('SECRET_KEY')
+DEBUG = config('DEBUG', default=True)
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://meme-mark.herokuapp.com/', 'localhost:8000']
 
 
 # Application definition
@@ -77,16 +77,16 @@ WSGI_APPLICATION = 'MeMe.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'meme',
-        'USER': 'postgres',
-        'PASSWORD': 'qwerty',
-        'HOST': 'localhost',
-        'PORT': '5432',
-    },
-}
+# default_dburl = {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'meme',
+#         'USER': 'postgres',
+#         'PASSWORD': 'qwerty',
+#         'HOST': 'localhost',
+#         'PORT': '5432',
+# }
+default_dburl = 'postgres://postgres:qwerty@localhost:5432/meme'
+DATABASES = { 'default': config('DATABASE_URL', default=default_dburl, cast=dburl),}
 
 
 # Password validation
@@ -126,6 +126,8 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'pictures')
 
 MEDIA_URL = '/memes/'
 
